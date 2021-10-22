@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>RoomBookingApp</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>connectregistration</servlet-name>
+		<servlet-class>com.perficient.Controller.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>connectregistration</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>connectlogin</servlet-name>
+		<servlet-class>com.perficient.Controller.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>connectlogin</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>BookRoom</servlet-name>
+		<servlet-class>com.perficient.Controller.RoomBookServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BookRoom</servlet-name>
+		<url-pattern>/BookRoom</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AdminBookRoom</servlet-name>
+		<servlet-class>com.perficient.Controller.AdminRoomBookServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminBookRoom</servlet-name>
+		<url-pattern>/AdminBookRoom</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>adminlogin</servlet-name>
+		<servlet-class>com.perficient.Controller.AdminLoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>adminlogin</servlet-name>
+		<url-pattern>/Adminlogin</url-pattern>
+	</servlet-mapping>
+
+<servlet>
+		<servlet-name>Mybooking</servlet-name>
+		<servlet-class>com.perficient.Controller.MybookingServlets</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Mybooking</servlet-name>
+		<url-pattern>/MybookingServlets</url-pattern>
+	</servlet-mapping>
+
+</web-app>
